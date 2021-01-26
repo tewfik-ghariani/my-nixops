@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "my-nixops"
+version = "0.1.0"
+description = ""
+authors = ["Tewfik Ghariani"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nixops-aws = {git = "https://github.com/nixos/nixops-aws.git", branch = "master"}
+nixops-gcp = {git = "https://github.com/nix-community/nixops-gce.git", branch = "master"}
+nixops-encrypted-links = {git = "https://github.com/nix-community/nixops-encrypted-links.git", branch = "master"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
